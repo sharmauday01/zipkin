@@ -170,6 +170,8 @@ jobs:
           GH_TOKEN: ${{ secrets.GH_TOKEN }}
         run: |
           build-bin/git/login_git
-          # yamllint disable-line rule:line-length
-          VERSION=$(./mvnw help:evaluate -Dexpression=project.version -q -DforceStdout)
+          VERSION=$(./mvnw help:evaluate \
+            -Dexpression=project.version \
+            -q \
+            -DforceStdout)
           build-bin/maven/maven_release "release-${VERSION}"
