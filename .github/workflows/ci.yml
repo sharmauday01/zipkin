@@ -49,6 +49,7 @@ jobs:
       - uses: actions/cache@v4
         with:
           path: ~/.npm
+          # yamllint disable-line rule:line-length
           key: ${{ runner.os }}-npm-${{ hashFiles('zipkin-lens/package-lock.json') }}
       - name: Build
         run: |
@@ -145,6 +146,7 @@ jobs:
   create_release:
     needs: [test, test_docker]
     runs-on: ubuntu-24.04
+    # yamllint disable-line rule:line-length
     if: "!contains(github.event.head_commit.message, 'maven-release-plugin') && github.ref == 'refs/heads/master'"
     steps:
       - name: Checkout Repository
@@ -168,5 +170,6 @@ jobs:
           GH_TOKEN: ${{ secrets.GH_TOKEN }}
         run: |
           build-bin/git/login_git
+          # yamllint disable-line rule:line-length
           VERSION=$(./mvnw help:evaluate -Dexpression=project.version -q -DforceStdout)
           build-bin/maven/maven_release "release-${VERSION}"
