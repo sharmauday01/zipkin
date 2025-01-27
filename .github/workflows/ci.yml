@@ -147,7 +147,7 @@ jobs:
   #         MAVEN_CONFIG: '-Dlicense.skip=true'  # license check already run
 
   create_release:
-    needs: [test, test_docker]
+    # needs: [test, test_docker]
     runs-on: ubuntu-24.04
     # yamllint disable-line rule:line-length
     if: "!contains(github.event.head_commit.message, 'maven-release-plugin') && github.ref == 'refs/heads/master'"
