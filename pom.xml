@@ -133,9 +133,9 @@
   </licenses>
 
   <scm>
-    <url>https://github.com/openzipkin/zipkin</url>
-    <connection>scm:git:https://github.com/openzipkin/zipkin.git</connection>
-    <developerConnection>scm:git:https://github.com/openzipkin/zipkin.git</developerConnection>
+    <url>https://github.com/Nagarro-DevOps-CoE/zipkin</url>
+    <connection>scm:git:https://github.com/Nagarro-DevOps-CoE/zipkin.git</connection>
+    <developerConnection>scm:git:https://github.com/Nagarro-DevOps-CoE/zipkin.git</developerConnection>
     <tag>HEAD</tag>
   </scm>
 
