@@ -12,4 +12,6 @@ git config user.email "zipkinci+zipkin-dev@googlegroups.com"
 
 # Setup https authentication credentials, used by ./mvnw release:prepare
 git config credential.helper "store --file=.git/credentials"
+
+echo "Saving credentials"
 echo "https://$GH_TOKEN:@github.com" > .git/credentials
