@@ -10,7 +10,7 @@
 
   <groupId>io.zipkin</groupId>
   <artifactId>zipkin-parent</artifactId>
-  <version>3.4.6-SNAPSHOT</version>
+  <version>3.4.5</version>
   <packaging>pom</packaging>
 
   <modules>
@@ -136,7 +136,7 @@
     <url>https://github.com/Nagarro-DevOps-CoE/zipkin</url>
     <connection>scm:git:https://github.com/Nagarro-DevOps-CoE/zipkin.git</connection>
     <developerConnection>scm:git:https://github.com/Nagarro-DevOps-CoE/zipkin.git</developerConnection>
-    <tag>HEAD</tag>
+    <tag>3.4.5</tag>
   </scm>
 
   <!-- Developer section is needed for Maven Central, but doesn't need to include each person -->
