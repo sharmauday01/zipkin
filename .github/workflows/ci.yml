@@ -164,9 +164,6 @@ jobs:
           key: ${{ runner.os }}-jdk-17-maven-${{ hashFiles('**/pom.xml') }}
           restore-keys: ${{ runner.os }}-jdk-17-maven-
       - name: Create Release
-        env:
-          GH_USER: ${{ secrets.GH_USER }}
-          GH_TOKEN: ${{ secrets.GH_TOKEN }}
         run: |
           build-bin/git/login_git
           VERSION=3.4.5
