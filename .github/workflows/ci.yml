@@ -152,8 +152,6 @@ jobs:
     steps:
       - name: Checkout Repository
         uses: actions/checkout@v4
-        with:
-          token: ${{ secrets.GH_TOKEN }}
       - name: Setup java
         uses: actions/setup-java@v4
         with:
